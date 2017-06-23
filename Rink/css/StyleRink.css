@@ -1,0 +1,663 @@
+﻿body, html {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+}
+
+
+
+
+
+h1 {
+    font-size: 18px;
+    padding-bottom: 10px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: rgb(22, 35, 84);
+}
+
+ht {
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: rgb(22, 35, 84);
+}
+
+hm {
+    margin-left: 10px;
+    font-size: 18px;
+    color: orangered;
+}
+
+.txt-all {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.text-just {
+    text-align: justify;
+}
+
+.txt-service {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    margin-top: 28px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+/*button*/
+.btn {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.btn-primary-schedule {
+    background-color: orangered;
+    margin: 20px 0 20px 0;
+}
+/*button*/
+
+
+/*id="mainPage*/
+.top_menu {
+    text-align: right;
+    height: 50px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #ffffff;
+    background: #9ddfea;
+}
+
+.social {
+    list-style-type: none;
+    margin-bottom: 0px;
+    float: left;
+    padding: 0px;
+    margin-left: 0px;
+}
+
+    .social li {
+        float: left;
+    }
+
+        .social li a {
+            padding: 0 10px;
+            font-size: 13px;
+            line-height: 40px;
+            color: #FFF;
+        }
+
+.navbar-right {
+    list-style-type: none;
+    margin-bottom: 0px;
+   
+}
+
+    .navbar-right li {
+        margin: 0px 10px;
+        font-size: 15px;
+        float: left;
+        line-height: 40px;
+        color: #FFF;
+    }
+
+.navbar-right li a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #1b6977 !important;
+}
+
+       
+.navbar-brand img {
+    margin-top: -45px;
+    margin-left: 15px;
+}
+
+.navbar-brand {
+    padding: 0px;
+    margin-left: 200px;
+}
+
+.header_image {
+    margin-top: -70px;
+    float: left;
+}
+
+.navbar-default {
+    margin: 0;
+    height: 110px;
+    padding-top: 15px;
+    border-bottom-color: cadetblue;
+    background-color: white;
+}
+
+
+
+#mainPage {
+    padding-top: 150px;
+}
+
+#banner {
+    width: 100%;
+    height: 430px;
+    margin-bottom: 15px;
+}
+
+.slider img {
+    width: 100%;
+    height: 430px;
+}
+
+
+.timetable {
+    height: auto;
+    width: 25%;
+}
+
+.event {
+    height: 110px;
+    box-sizing: border-box;
+    border: 3px solid #f5e6f8;
+    margin-bottom: 15px;
+}
+
+.event-date {
+    height: 100%;
+    background: #30bed6;
+    color: #ffffff;
+    text-align: center;
+    float: left;
+}
+
+
+.news {
+    height: 50px;
+    box-sizing: border-box;
+}
+
+.news-date {
+    height: 100%;
+    color: #d82424;
+    text-align: center;
+    left: 8%;
+}
+
+.news-content {
+    margin-bottom: 5%;
+}
+
+    .news-content:hover {
+        color: #23527c;
+        text-decoration: underline;
+    }
+
+.timetable .news .news-date b {
+    font-size: 24px;
+    display: block;
+}
+
+.event-button {
+    margin-top: 4.5%;
+}
+
+    .event-button img {
+        width: 100%;
+        height: 100%;
+    }
+
+.inf-school-img img {
+    width: 125%;
+    margin-top: 20px;
+}
+
+/*id="mainPage*/
+
+
+/*id="aboutUs" */
+
+.history {
+    margin: 20px 0 50px 0;
+    text-align: center;
+}
+
+.page-title {
+    margin: 20px 0 50px 0;
+    text-align: center;
+}
+/*id="aboutUs" */
+
+
+/*calendar*/
+#calendar3 {
+    line-height: 1.2em;
+    font-size: 15px;
+    text-align: center;
+    float: left;
+}
+
+    #calendar3 thead tr:last-child {
+        font-size: small;
+        color: rgb(85, 85, 85);
+    }
+
+    #calendar3 tbody td {
+        color: rgb(44, 86, 122);
+    }
+
+        #calendar3 tbody td:nth-child(n+6), #calendar3 .holiday {
+            color: rgb(231, 140, 92);
+        }
+
+        #calendar3 tbody td.today {
+            outline: 3px solid #00adff;
+        }
+
+
+#calendar4 {
+     line-height: 1.2em;
+    font-size: 15px;
+    text-align: center;
+    float: left;
+}
+
+    #calendar4 thead tr:last-child {
+        font-size: small;
+        color: rgb(85, 85, 85);
+    }
+
+    #calendar4 tbody td {
+        color: rgb(44, 86, 122);
+    }
+
+        #calendar4 tbody td:nth-child(n+6), #calendar4 .holiday {
+            color: rgb(231, 140, 92);
+        }
+
+        #calendar4 tbody td.today {
+            outline: 3px solid #00adff;
+        }
+
+#calendar5 {
+    line-height: 1.2em;
+    font-size: 15px;
+    text-align: center;
+    float: left;
+}
+
+#calendar5 thead tr:last-child {
+    font-size: small;
+    color: rgb(85, 85, 85);
+}
+
+#calendar5 tbody td {
+    color: rgb(44, 86, 122);
+}
+
+    #calendar5 tbody td:nth-child(n+6), #calendar5 .holiday {
+        color: rgb(231, 140, 92);
+    }
+
+    #calendar5 tbody td.today {
+        outline: 3px solid #00adff;
+    }
+
+
+
+#calendar6 {
+    line-height: 1.2em;
+    font-size: 15px;
+    text-align: center;
+    float: left;
+}
+
+    #calendar6 thead tr:last-child {
+        font-size: small;
+        color: rgb(85, 85, 85);
+    }
+
+    #calendar6 tbody td {
+        color: rgb(44, 86, 122);
+    }
+
+        #calendar6 tbody td:nth-child(n+6), #calendar6 .holiday {
+            color: rgb(231, 140, 92);
+        }
+
+        #calendar6 tbody td.today {
+            outline: 3px solid #00adff;
+        }
+
+
+#calendar7 {
+     line-height: 1.2em;
+    font-size: 15px;
+    text-align: center;
+    float: left;
+}
+
+    #calendar7 thead tr:last-child {
+        font-size: small;
+        color: rgb(85, 85, 85);
+    }
+
+    #calendar7 tbody td {
+        color: rgb(44, 86, 122);
+    }
+
+        #calendar7 tbody td:nth-child(n+6), #calendar7 .holiday {
+            color: rgb(231, 140, 92);
+        }
+
+        #calendar7 tbody td.today {
+            outline: 3px solid #00adff;
+        }
+
+
+#calendar8 {
+    line-height: 1.2em;
+    font-size: 15px;
+    text-align: center;
+    float: left;
+}
+
+    #calendar8 thead tr:last-child {
+        font-size: small;
+        color: rgb(85, 85, 85);
+    }
+
+    #calendar8 tbody td {
+        color: rgb(44, 86, 122);
+    }
+
+        #calendar8 tbody td:nth-child(n+6), #calendar8 .holiday {
+            color: rgb(231, 140, 92);
+        }
+
+        #calendar8 tbody td.today {
+            outline: 3px solid #00adff;
+        }
+
+
+/*calendar*/
+
+
+
+
+/*schedule*/
+
+.time-download {
+    border-radius: 25px;
+    background: #9ddfea;
+    font-size: 15px;
+    color: #0e3590;
+    padding: 15px 20px 15px 15px;
+    margin-left: 5%;
+}
+
+a.time-table .img {
+    width: 1000px;
+    height: 950px;
+}
+
+a.st .img img {
+    width: 900px;
+    height: 800px;
+}
+
+a.time-table:hover .img {
+    width: 1000px;
+    height: 950px;
+    overflow: visible;
+    visibility: hidden;
+}
+
+    a.time-table:hover .img img {
+        visibility: visible;
+        position: absolute;
+        z-index: 200;
+    }
+
+/*schedule*/
+
+
+
+/*service*/
+
+.contacts-fhoto img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px #004080;
+}
+
+/*service*/
+
+
+/*id="photoGallery"*/
+
+.thumb img {
+    filter: none; /* IE6-9 */
+    -webkit-filter: grayscale(0);
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+    .thumb img:hover {
+        filter: gray; /* IE6-9 */
+        -webkit-filter: grayscale(1);
+    }
+
+
+/*id="photoGallery"*/
+
+
+
+.middle {
+    padding-top: 160px;
+}
+
+.middle-inside a {
+    font-size: 14px;
+}
+
+
+.middle-inside li {
+    display: inline;
+}
+
+
+/*contacts*/
+
+.contacts-map-inf {
+    border: solid 1px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    background: rgba(39, 74, 80, 0.69);
+    padding: 15px;
+    width: 40%;
+    height: 50%;
+    font-size: 15px;
+    color: white;
+}
+
+.contacts-close {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    cursor: pointer;
+    color: #FFF;
+    font-style: normal;
+}
+
+.contacts-list {
+    list-style-type: none;
+    font-size: 18px;
+    position: fixed;
+}
+
+    .contacts-list li {
+        margin-bottom: 10px;
+    }
+
+.contacts-map {
+    margin-bottom: 50px;
+}
+
+/*contacts*/
+
+
+/*footer*/
+
+.footer-rink {
+    background-color: #64949c;
+    border-top: 1px solid #dfdfdf;
+    margin-top: 10px;
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+    position: absolute;
+    height: 250px;
+}
+
+.menu-bottom ul {
+    margin-left: -40px;
+}
+
+    .menu-bottom ul li {
+        list-style: none;
+        padding-bottom: 15px;
+        line-height: 15px;
+    }
+
+        .menu-bottom ul li a {
+            font-size: 14px;
+            text-transform: uppercase;
+            color: rgb(22, 35, 84);
+        }
+
+.map-min {
+    width: 100%;
+}
+
+.nav-bottom {
+    margin-left: -40px;
+    margin-top: 120px;
+}
+
+    .nav-bottom li {
+        display: inline;
+        padding-right: 20px;
+    }
+
+/*footer*/
+
+@media screen and (max-width: 567px) and (min-width: 320px) {
+    #banner {
+        min-height: 230px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        height: 230px;
+    }
+
+    .col-md-9 {
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+        float: none;
+        padding-top: 24px;
+    }
+
+    .event {
+        max-width: 702px;
+        width: 100%;
+        height: 130px;
+        box-sizing: border-box;
+        border: 3px solid #f5e6f8;
+        margin-bottom: 15px;
+        background: #ffffff;
+    }
+
+    h1 {
+        font-size: 18px;
+        padding-bottom: 10px;
+        line-height: 16px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .event-date {
+        width: 30%;
+    }
+
+    .event-content {
+        margin: 0 0 0 30%;
+        height: 75px;
+        width: 65%;
+        border-right: none;
+    }
+
+    .btn {
+        margin-left: 5%;
+        margin-top: -10%;
+    }
+
+    #all-news {
+        max-width: 702px;
+        width: 100%;
+        float: none;
+    }
+
+    .news {
+        max-width: 702px;
+        width: 100%;
+        float: none;
+    }
+
+    .news-date {
+        text-align: center;
+        width: 89%;
+        margin-bottom: 20px;
+    }
+
+    .news-content {
+        margin-bottom: 20px;
+    }
+
+    .inf-school-img {
+        text-align: center;
+        margin-top: 55px;
+    }
+
+        .inf-school-img img {
+            margin-bottom: 5px;
+            width: 20%;
+        }
+
+    .footer-rink {
+        text-align: center;
+        height: auto;
+    }
+
+    .navbar-right {
+    width:100%;}
+
+    .thumb img {
+    }
+
+}

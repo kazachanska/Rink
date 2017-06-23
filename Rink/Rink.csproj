@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{89A9497E-E5CC-4B8D-B026-B4824E680E2C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rink</RootNamespace>
+    <AssemblyName>Rink</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\jquery.fancybox.css" />
+    <Content Include="css\my-helpers.css" />
+    <Content Include="css\slick-theme.css" />
+    <Content Include="css\slick.css" />
+    <Content Include="css\StyleRink.css" />
+    <Content Include="html\HtmlRink.html" />
+    <Content Include="images\12.jpg" />
+    <Content Include="images\3-1.jpg" />
+    <Content Include="images\3D_plan.jpg" />
+    <Content Include="images\button.jpg" />
+    <Content Include="images\fig.jpg" />
+    <Content Include="images\fig1.jpg" />
+    <Content Include="images\footer\1.jpg" />
+    <Content Include="images\footer\2-1.jpg" />
+    <Content Include="images\footer\2.jpg" />
+    <Content Include="images\footer\3-1.jpg" />
+    <Content Include="images\footer\3.jpg" />
+    <Content Include="images\footer\4.jpg" />
+    <Content Include="images\footer\5.jpg" />
+    <Content Include="images\footer\map.png" />
+    <Content Include="images\footer\mini-gall1.jpg" />
+    <Content Include="images\footer\mini-gall11.jpg" />
+    <Content Include="images\footer\mini-gall12.jpg" />
+    <Content Include="images\footer\mini-gall13.jpg" />
+    <Content Include="images\footer\mini-gall3.jpg" />
+    <Content Include="images\footer\mini-gall6.jpg" />
+    <Content Include="images\footer\mini-map.png" />
+    <Content Include="images\footer\nhlbru3.jpg" />
+    <Content Include="images\footer\rink.png" />
+    <Content Include="images\footer\rink\14452959.jpg" />
+    <Content Include="images\footer\rink\17534203.jpg" />
+    <Content Include="images\footer\rink\17534212.jpg" />
+    <Content Include="images\footer\rink\b11418c6270d6b6b3bc423.jpg" />
+    <Content Include="images\footer\rink\b11419e9cacec69e759056.jpg" />
+    <Content Include="images\footer\rink\f0eeddd5fb02.jpg" />
+    <Content Include="images\footer\rink\zal.jpg" />
+    <Content Include="images\footer\Безымянный.png" />
+    <Content Include="images\gall16.jpg" />
+    <Content Include="images\gallery\f0eeee445900.jpg" />
+    <Content Include="images\gallery\f0ef370b32a1.jpg" />
+    <Content Include="images\gallery\f0ef3c2b5f8b.jpg" />
+    <Content Include="images\gallery\figurnoe-katanie1.jpg" />
+    <Content Include="images\gallery\gall.jpg" />
+    <Content Include="images\gallery\gall1.jpg" />
+    <Content Include="images\gallery\gall10.jpg" />
+    <Content Include="images\gallery\gall11.jpg" />
+    <Content Include="images\gallery\gall12.jpg" />
+    <Content Include="images\gallery\gall13.jpg" />
+    <Content Include="images\gallery\gall14.jpg" />
+    <Content Include="images\gallery\gall15.jpg" />
+    <Content Include="images\gallery\gall16.jpg" />
+    <Content Include="images\gallery\gall2.jpg" />
+    <Content Include="images\gallery\gall3.jpg" />
+    <Content Include="images\gallery\gall4.jpg" />
+    <Content Include="images\gallery\gall5.jpg" />
+    <Content Include="images\gallery\gall6.jpg" />
+    <Content Include="images\gallery\gall7.jpg" />
+    <Content Include="images\gallery\gall8.jpg" />
+    <Content Include="images\gallery\gall9.jpg" />
+    <Content Include="images\hokk.jpg" />
+    <Content Include="images\hokk1.jpg" />
+    <Content Include="images\Knoka-Skachati.jpg" />
+    <Content Include="images\krig.png" />
+    <Content Include="images\krig1.png" />
+    <Content Include="images\logo-txt.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo2.png" />
+    <Content Include="images\logotxt.png" />
+    <Content Include="images\m1.png" />
+    <Content Include="images\mini-map.png" />
+    <Content Include="images\ODE-1678.jpg" />
+    <Content Include="images\onas\15095549_214602805633575_1200964436542642257_n.jpg" />
+    <Content Include="images\onas\429545_main.jpg" />
+    <Content Include="images\onas\429546_main.jpg" />
+    <Content Include="images\onas\760747_1920x0_e75.jpg" />
+    <Content Include="images\onas\984891_1450704790-3125.jpg" />
+    <Content Include="images\onas\dva-1.jpg" />
+    <Content Include="images\onas\ea1adbe5064b145653773f85b753302a.jpg" />
+    <Content Include="images\onas\hqdefault.jpg" />
+    <Content Include="images\onas\images %281%29.jpg" />
+    <Content Include="images\onas\odin-2.jpg" />
+    <Content Include="images\onas\_275x400_235019_adeaab064e01be66bfb4b6b7ccff74d8fedf4a5b00db72326537f8f3704abbd31461920504.jpg" />
+    <Content Include="images\Osnovn-front.jpg" />
+    <Content Include="images\Osnovn-front1.jpg" />
+    <Content Include="images\Osnovn-front2.jpg" />
+    <Content Include="images\service\cycletrack.jpg" />
+    <Content Include="images\service\gimn.jpg" />
+    <Content Include="images\service\gym.jpg" />
+    <Content Include="images\service\hall.jpg" />
+    <Content Include="images\service\rink.jpg" />
+    <Content Include="images\service\sportbaza.jpg" />
+    <Content Include="images\sprite4.png" />
+    <Content Include="images\sprite5.png" />
+    <Content Include="images\time.doc" />
+    <Content Include="images\time\pdf\time.pdf" />
+    <Content Include="images\time\pdf\timecycletrack.pdf" />
+    <Content Include="images\time\pdf\timegum.pdf" />
+    <Content Include="images\time\pdf\timehall.pdf" />
+    <Content Include="images\time\pdf\timeSbase.pdf" />
+    <Content Include="images\time\pdf\timesportGym.pdf" />
+    <Content Include="images\time\time-cycletrack.jpg" />
+    <Content Include="images\time\time-gum.jpg" />
+    <Content Include="images\time\time-hall.jpg" />
+    <Content Include="images\time\time-sbase.jpg" />
+    <Content Include="images\time\time-sportgum.jpg" />
+    <Content Include="images\time\time.jpg" />
+    <Content Include="images\twitter.png" />
+    <Content Include="images\vacancy.jpg" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\JavaScriptRink.js" />
+    <Content Include="js\jquery-ui.js" />
+    <Content Include="js\jquery.fancybox.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\slick.js" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49779</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49779/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

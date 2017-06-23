@@ -1,0 +1,1068 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Каток-Арена</title>
+
+    <link href="../css/jquery-ui.css" rel="stylesheet" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/slick-theme.css" rel="stylesheet" />
+    <link href="../css/my-helpers.css" rel="stylesheet" />
+    <link href="../css/slick.css" rel="stylesheet" />
+    <link href="../css/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen" />
+
+
+    <link href="../css/StyleRink.css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <header>
+        <div class="top_menu">
+            <div class="container container_menu">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><i class="fa fa-phone"></i>(044) 543-21-25</li>
+                            <li><i class="fa fa-map-marker"></i>м. Київ, вул. Міста Шалетт, 6</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#mainPage"><img src="../images/logotxt.png" /></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="menu-main-page"><a href="#mainPage">Головна</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Про нас</a>
+                            <ul class="dropdown-menu">
+                                <li class="menu-about-us"><a href="#aboutUs">Історія</a></li>
+                                <li class="menu-our-team"><a href="#ourTeam">Керівництво</a></li>
+                                <li class="menu-photo-gallery"><a href="#photoGallery">Фотогалерея</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-service"><a href="#service">Послуги</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Розклад</a>
+                            <ul class="dropdown-menu" id="scheduleList">
+                                <li><a href="#scheduleRink">Каток</a></li>
+                                <li><a href="#scheduleSbase">Спортивна база</a></li>
+                                <li><a href="#scheduleGum">Гімнастична зала</a></li>
+                                <li><a href="#scheduleSGym">Тренажерна зала</a></li>
+                                <li><a href="#scheduleTrack">Велотрек</a></li>
+                                <li><a href="#schedulehall">Конференц-зала</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-contacts"><a href="#contacts">Контакти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="mainPage" class="link">
+        <div class="container">
+            <div id="banner">
+                <div class="slider">
+                    <div><div class="image"><img src="../images/12.jpg" /></div></div>
+                    <div><div class="image"><img src="../images/3-1.jpg" /></div></div>
+                    <div><div class="image"><img src="../images/gall16.jpg" /></div></div>
+                    <div><div class="image"><img src="../images/Osnovn-front.jpg" /></div></div>
+                    <div><div class="image"><img src="../images/ODE-1678.jpg" /></div></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>найближчі події</h1><!--разные события на катке-->
+                </div>
+                <div class="col-md-9">
+                    <div class="event">
+                        <div class="col-md-2 event-date">
+                            <h3>13</h3>
+                            <h4>березень</h4>
+                        </div>
+                        <div class="col-md-8 event-content"><h3>Назва події</h3><h5 class="txt-all txt-just">Короткий анонс Очередной спарринг команда Сергея Реброва проводила против середняка третьего по силе дивизиона Швейцарии - «Кёница»</h5></div>
+                        <div class="col-md-2 event-button"><a class="btn btn-primary btn-sm ev more" href="#more-one">Читати</a></div>
+                        <div style="display:none">
+                            <div id="more-one"><img src="../images/gallery/gall1.jpg" /><br /><p>Очередной спарринг команда Сергея Реброва провОчередной </p> </div>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="col-md-2 event-date">
+                            <h3>13</h3>
+                            <h4>березень</h4>
+                        </div>
+                        <div class="col-md-8 event-content"><h3>Назва події</h3><h5 class="txt-all txt-just">Короткий анонс Очередной спарринг команда Сергея Реброва проводила против середняка третьего по силе дивизиона Швейцарии - «Кёница»</h5></div>
+                        <div class="col-md-2 event-button"><a class="btn btn-primary btn-sm ev more" href="#more-two">Читати</a></div>
+                        <div style="display:none">
+                            <div id="more-two"><p>Сергея Реброва пров</p> <img src="../images/gallery/gall10.jpg" /></div>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="col-md-2 event-date">
+                            <h3>13</h3>
+                            <h4>березень</h4>
+                        </div>
+                        <div class="col-md-8 event-content"><h3>Назва події</h3><h5 class="txt-all txt-just">Короткий анонс Очередной спарринг команда Сергея Реброва проводила против середняка третьего по силе дивизиона Швейцарии - «Кёница»</h5></div>
+                        <div class="col-md-2 event-button"><a class="btn btn-primary btn-sm ev more" href="#more-tree">Читати</a></div>
+                        <div style="display:none">
+                            <div id="more-tree"><p>Зверніть увагу на зміну розкладу на на нннЗверніть увагу на зміну розкладу на на нннЗверніть увагу на зміну розкладу на на нннЗверніть увагу на зміну розкладу на на нннЗверніть увагу на зміну розкладу на на ннн</p> <img src="../images/gallery/gall12.jpg" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="all-news" class="link col-md-3 timetable">
+                    <div class="news">
+                        <div class="col-md-3 news-date">
+                            <b>13</b>лют
+                        </div>
+                        <div class="col-md-9 news-content"><h5 class="txt-just txt-all">Зверніть увагу на зміну розкладу на ннннна</h5></div>
+                    </div>
+                    <div class="news">
+                        <div class="col-md-3 news-date">
+                            <b>15</b>лют
+                        </div>
+                        <div class="col-md-9 news-content"><h5 class="txt-just txt-all">Зверніть увагу на зміну розкладу на ннннннннннннннннннннннннннннннннннннннннннннннннн</h5></div>
+                    </div>
+
+                    <row class="inf-school">
+                        <div class="col-md-4 inf-school-img">
+                            <a href="http://ufsf.com.ua/" target="_blank"><img src="../images/fig1.jpg" /></a>
+                        </div>
+                        <div class="col-md-4 inf-school-img">
+                            <a href="http://www.fhu.com.ua/" target="_blank"><img src="../images/hokk1.jpg" /></a>
+                        </div>
+                        <div class="col-md-4 inf-school-img">
+                            <a href="http://hockey2005.in.ua/" target="_blank"><img src="../images/krig1.png" /></a>
+                        </div>
+                    </row>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="aboutUs" class="link" style="display:none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 middle">
+                    <ul class="breadcrumb middle-inside">
+                        <li class="menu-main-page"><a href="#mainPage">Головна</a></li>
+                        <li>Про нас</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="../images/Osnovn-front.jpg" style="width:100%;" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 history">
+                    <ht>НОВЫЙ СПОРТКЛУБ, ОБЩЕЙ ПЛОЩАДЬЮ 7 500 КВ.М.</ht>
+                    <p class="txt-service">
+                        НОВЫЙ СПОРТКЛУБ, ОБЩЕЙ ПЛОЩАДЬЮ 7 500 КВ.М.
+                        Спортклуб EnerGym – это современный спортивный комплекс на Левом берегу для всей семьи. В спортклубе функционируют: кардио театр, тренажерный зал, зал для групповых тренировок, 25-метровый бассейн, а также два детских бассейна, зона СПА, фитнес-бар и бойцовский клуб.
+                        Преимущества EnerGym:
+                        Спортклуб расположен на проспекте Павла Тычины с прекрасным видом с Днепровской набережной на Правый берег Киева, панорама на Лавру и Днепр способствует приятным и полезным тренировкам;
+                        Новый, 2-х этажный спортклуб, общей площадью 6 000 кв.м.;
+                        Профессиональный спортивный бассейн 25х15 кв.м на 6 плавательных дорожек и 2 детских бассейна;
+                        Бойцовский клуб (fight club) общей площадью 500 кв.м., профессиональный ринг 6х6 и ковер для занятий борьбой;
+                        Детский клуб EnerKid, общей площадью 500 кв.м.;
+                        Удобный подземный паркинг;
+                        Качество обслуживания;
+                        Профессионалы фитнеса и спорта;
+                        Современное силовое и кардио оборудование американской фирмы MATRIX;
+                        Более 650 групповых занятий в месяц.
+                        Эксклюзивные направления, которые будут представлены только в EnerJump (сквош, паркур, воркаут и батуты).
+                        ПЛАН
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 history-img">
+                    <img src="../images/footer/rink/14452959.jpg" />
+                </div>
+                <div class="col-md-6 history-img"><img src="../images/footer/rink/14452959.jpg" /></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ourTeam" class="link" style="display:none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 middle">
+                    <ul class="breadcrumb middle-inside">
+                        <li class="menu-main-page"><a href="#mainPage">Головна</a></li>
+                        <li>Послуги</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12 page-title">
+                <ht>КЕРІВНИЦТВО</ht>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../images/vacancy.jpg" alt="" class="img-circle">
+                    <h4>.......</h4>
+                    <p class="txt-service">
+                        <b>Посада:</b> Начальник структурного підрозділу<br />
+                        <b>Про себе:</b> Моя цель - помочь растить свободных, здоровых и мыслящих детейпомочь растить свободных, здоровых и мыслящих детейпомочь растить свободных, здоровых и мыслящих детей<br />
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="../images/vacancy.jpg" alt="" class="img-circle">
+                    <h4>......</h4>
+                    <p class="txt-service">
+                        <b>Посада:</b> Начальник структурного підрозділу<br />
+                        <b>Про себе:</b> Моя цель - помочь растить свободных, здоровых и мыслящих детей<br />
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="../images/vacancy.jpg" alt="" class="img-circle">
+                    <h4>......</h4>
+                    <p class="txt-service">
+                        <b>Посада:</b> Начальник структурного підрозділу<br />
+                        <b>Про себе:</b> Моя цель - помочь растить свободных, здоровых и мыслящих детей<br />
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="photoGallery" class="link" style="display:none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 middle">
+                    <ul class="breadcrumb middle-inside">
+                        <li class="menu-main-page"><a href="#mainPage">Головна</a></li>
+                        <li>Фотогалерея</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12 page-title">
+                <ht>Фотогалерея</ht>
+            </div>
+            <div class="row">
+                <div class="col-md-3 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="../images/gallery/gall6.jpg">
+                        <img class="img-responsive" src="../images/gallery/gall6.jpg">
+                    </a>
+                </div>
+                <div class="col-md-3 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="../images/gallery/gall8.jpg">
+                        <img class="img-responsive" src="../images/gallery/gall8.jpg">
+                    </a>
+                </div>
+                <div class="col-md-3 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="../images/gallery/gall11.jpg">
+                        <img class="img-responsive" src="../images/gallery/gall11.jpg">
+                    </a>
+                </div>
+                <div class="col-md-3 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="../images/gallery/gall12.jpg">
+                        <img class="img-responsive" src="../images/gallery/gall12.jpg">
+                    </a>
+                </div>
+                <div class="col-md-3 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="../images/gallery/gall13.jpg">
+                        <img class="img-responsive" src="../images/gallery/gall13.jpg">
+                    </a>
+                </div>
+                <div class="col-md-3 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="../images/gallery/gall.jpg">
+                        <img class="img-responsive" src="../images/gallery/gall.jpg">
+                    </a>
+                </div>
+                <div class="col-md-3 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="../images/gallery/gall3.jpg">
+                        <img class="img-responsive" src="../images/gallery/gall3.jpg">
+                    </a>
+                </div>
+                <div class="col-md-3 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="../images/gallery/gall4.jpg">
+                        <img class="img-responsive" src="../images/gallery/gall4.jpg">
+                    </a>
+                </div>
+                <div class="col-md-3 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="../images/gallery/gall1.jpg">
+                        <img class="img-responsive" src="../images/gallery/gall1.jpg">
+                    </a>
+                </div>
+                <div class="col-md-3 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="../images/gallery/gall2.jpg">
+                        <img class="img-responsive" src="../images/gallery/gall2.jpg">
+                    </a>
+                </div>
+                <div class="col-md-3 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="../images/gallery/gall14.jpg">
+                        <img class="img-responsive" src="../images/gallery/gall14.jpg">
+                    </a>
+                </div>
+                <div class="col-md-3 thumb">
+                    <a class="fancyimage" data-fancybox-group="group" href="../images/gallery/gall15.jpg">
+                        <img class="img-responsive" src="../images/gallery/gall15.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="service" class="link" style="display:none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 middle">
+                    <ul class="breadcrumb middle-inside">
+                        <li class="menu-main-page"><a href="#mainPage">Головна</a></li>
+                        <li>Послуги</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12 page-title">
+                <ht>ПОСЛУГИ</ht>
+            </div>
+            <div class="row">
+                <div class="col-md-4 rink-service pointer"><h1>Каток</h1><img src="../images/service/rink.jpg" class="img-responsive" alt="Responsive image"></div>
+                <div class="col-md-4 sports-base-service pointer"><h1>Спортивна база</h1><img src="../images/service/sportbaza.jpg" class="img-responsive" alt="Responsive image"></div>
+                <div class="col-md-4 gym-service pointer"><h1>Гімнастична зала</h1><img src="../images/service/gimn.jpg" class="img-responsive" alt="Responsive image"></a></div>
+                <div class="col-md-4 sport-gym-service pointer"><h1>Тренажерна зала</h1><img src="../images/service/gym.jpg" class="img-responsive" alt="Responsive image"></a></div>
+                <div class="col-md-4 cycletrack-service pointer"><h1>Велотрек</h1><img src="../images/service/cycletrack.jpg" class="img-responsive" alt="Responsive image"></a></div>
+                <div class="col-md-4 hall-service pointer"><h1>конференц-зала</h1><img src="../images/service/hall.jpg" class="img-responsive" alt="Responsive image"></a></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="iceRink" class="link" style="display:none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 middle">
+                    <ul class="breadcrumb middle-inside">
+                        <li class="menu-main-page"><a href="#mainPage">Головна</a></li>
+                        <li class="menu-service"><a href="#service">Послуги</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12 page-title">
+                <ht>каток</ht>
+            </div>
+            <div class="col-md-6 contacts-fhoto pointer">
+                <img src="../images/service/rink.jpg" />
+            </div>
+            <div class="col-md-6">
+                <p><h4>м. Київ, вул. Міста Шалетт, 6</h4></p>
+                <p>
+                    <img src="../images/m1.png"><a href="#map1"><hm>Показати на карті</hm></a>
+                </p>
+                <p>
+                    <a href="#scheduleRink" class="btn btn-primary-schedule active" role="button">Розклад занять на катку</a>
+                </p>
+                <p class="txt-service">
+                    <b>Режим роботи:</b><br />Понеділок-п'ятниця з 7:00 до 23:00<br />Субота-неділя з 9:00 до 22:00<br /><b>Телефон:</b> (044) 5931515<br />
+                    Технічна характеристика З якого року працює Работает с 2014 года. В данном зале проводятся тренировки по акробатике, паркуру и спортивной гимнастике для всех возрастов. Оборудование: гимнастический (пружинящий) ковер, много матов и кубов, детские модули, женские и мужские брусья, кольца, язык, конь, перекладина, бревна.
+                </p>
+            </div>
+        </div>
+        <div id="map1">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10159.047175790458!2d30.60968532818134!3d50.46416030576719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d01ca8f77f83%3A0x6c849ea6c32a6a4!2z0LLRg9C70LjRhtGPINCc0ZbRgdGC0LAg0KjQsNC70LXRgtGCLCDQmtC40ZfQsg!5e0!3m2!1suk!2sua!4v1489599930436" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="scheduleRink" class="link" style="display:none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 middle">
+                    <ul class="breadcrumb middle-inside">
+                        <li class="menu-main-page"><a href="#mainPage">Головна</a></li>
+                        <li class="menu-service"><a href="#service">Послуги</a></li>
+                        <li>Розклад</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <a href="../images/time/pdf/time.pdf" class="time-download" download>Завантажити розклад</a>
+                <table id="calendar3">
+                    <thead>
+                        <tr>
+                            <td colspan="4">
+                                <select>
+                                    <option value="0">Січень</option>
+                                    <option value="1">Лютий</option>
+                                    <option value="2">Березень</option>
+                                    <option value="3">Квітень</option>
+                                    <option value="4">Травень</option>
+                                    <option value="5">Червень</option>
+                                    <option value="6">Липень</option>
+                                    <option value="7">Серпень</option>
+                                    <option value="8">Вересень</option>
+                                    <option value="9">Жовтень</option>
+                                    <option value="10">Листопад</option>
+                                    <option value="11">Грудень</option>
+                                </select>
+                            <td colspan="3"><input type="number" value="" min="0" max="9999" size="4">
+                        <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+                    <tbody>
+                </table>
+            </div>
+            <div class="col-md-12">
+                <a class="time-table" href="javascript:">
+                    <div class="img"><img src="../images/time/time.jpg" alt="" title="" /></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="sportsBase" class="link" style="display:none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 middle">
+                    <ul class="breadcrumb middle-inside">
+                        <li class="menu-main-page"><a href="#mainPage">Головна</a></li>
+                        <li class="menu-service"><a href="#service">Послуги</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12 page-title">
+                <ht>спортивна база</ht>
+            </div>
+            <div class="col-md-6 contacts-fhoto pointer">
+                <img src="../images/service/sportbaza.jpg" />
+            </div>
+            <div class="col-md-6">
+                <p>
+                    <h4>
+                        м. Київ, Труханів острів
+                    </h4>
+                </p>
+                <p>
+                    <img src="../images/m1.png"><a href="#map2"><hm>Показати на карті</hm></a>
+                </p>
+                <p>
+                    <a href="#scheduleSbase" class="btn btn-primary-schedule active" role="button">Розклад занять на катку</a>
+                </p>
+                <p class="txt-service">
+                    <b>Режим роботи:</b><br />Понеділок-п'ятниця з 7:00 до 23:00<br />Субота-неділя з 9:00 до 22:00<br /><b>Телефон:</b> (044) 5931515
+                    Технічна характеристика З якого року працює Работает с 2014 года. В данном зале проводятся тренировки по акробатике, паркуру и спортивной гимнастике для всех возрастов. Оборудование: гимнастический (пружинящий) ковер, много матов и кубов, детские модули, женские и мужские брусья, кольца, язык, конь, перекладина, бревна.
+                </p>
+            </div>
+        </div>
+        <div id="map2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.806225010033!2d30.542811315440115!3d50.463332979477144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce341bbda1f3%3A0x317b5de176db8574!2z0KLRgNGD0YXQsNC90ZbQsiDQvtGB0YLRgNGW0LI!5e0!3m2!1suk!2sua!4v1492079545888" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="scheduleSbase" class="link" style="display:none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 middle">
+                    <ul class="breadcrumb middle-inside">
+                        <li class="menu-main-page"><a href="#mainPage">Головна</a></li>
+                        <li class="menu-service"><a href="#service">Послуги</a></li>
+                        <li>Розклад</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <a href="../images/time/pdf/time.pdf" class="time-download" download>Завантажити розклад</a>
+                <table id="calendar4">
+                    <thead>
+                        <tr>
+                            <td colspan="4">
+                                <select>
+                                    <option value="0">Січень</option>
+                                    <option value="1">Лютий</option>
+                                    <option value="2">Березень</option>
+                                    <option value="3">Квітень</option>
+                                    <option value="4">Травень</option>
+                                    <option value="5">Червень</option>
+                                    <option value="6">Липень</option>
+                                    <option value="7">Серпень</option>
+                                    <option value="8">Вересень</option>
+                                    <option value="9">Жовтень</option>
+                                    <option value="10">Листопад</option>
+                                    <option value="11">Грудень</option>
+                                </select>
+                            <td colspan="3"><input type="number" value="" min="0" max="9999" size="4">
+                        <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+                    <tbody>
+                </table>
+            </div>
+            <div class="col-md-12">
+                <a class="time-table" href="javascript:">
+                    <div class="img"><img src="../images/time/time-sbase.jpg" alt="" title="" /></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="gym" class="link" style="display:none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 middle">
+                    <ul class="breadcrumb middle-inside">
+                        <li class="menu-main-page"><a href="#mainPage">Головна</a></li>
+                        <li class="menu-service"><a href="#service">Послуги</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12 page-title">
+                <p><ht>гімнастична зала</ht></p>
+            </div>
+            <div class="col-md-6 contacts-fhoto pointer">
+                <img src="../images/service/gimn.jpg" />
+            </div>
+            <div class="col-md-6">
+                <p>
+                    <h4>
+                        м. Київ, вул. Міста Шалетт, 6
+                    </h4>
+                </p>
+                <p>
+                    <img src="../images/m1.png"><a href="#map3"><hm>Показати на карті</hm></a>
+                </p>
+                <p>
+                    <a href="#scheduleGum" class="btn btn-primary-schedule active" role="button">Розклад занять на катку</a>
+                </p>
+                <p class="txt-service">
+                    <b>Режим роботи:</b><br />Понеділок-п'ятниця з 7:00 до 23:00<br />Субота-неділя з 9:00 до 22:00<br /><b>Телефон:</b> (044) 5931515
+                    Технічна характеристика З якого року працює Работает с 2014 года. В данном зале проводятся тренировки по акробатике, паркуру и спортивной гимнастике для всех возрастов. Оборудование: гимнастический (пружинящий) ковер, много матов и кубов, детские модули, женские и мужские брусья, кольца, язык, конь, перекладина, бревна.
+                </p>
+            </div>
+        </div>
+        <div id="map3">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10159.047175790458!2d30.60968532818134!3d50.46416030576719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d01ca8f77f83%3A0x6c849ea6c32a6a4!2z0LLRg9C70LjRhtGPINCc0ZbRgdGC0LAg0KjQsNC70LXRgtGCLCDQmtC40ZfQsg!5e0!3m2!1suk!2sua!4v1489599930436" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="scheduleGum" class="link" style="display:none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 middle">
+                    <ul class="breadcrumb middle-inside">
+                        <li class="menu-main-page"><a href="#mainPage">Головна</a></li>
+                        <li class="menu-service"><a href="#service">Послуги</a></li>
+                        <li>Розклад</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <a href="../images/time/pdf/timegum.pdf" class="time-download" download>Завантажити розклад</a>
+                <table id="calendar5">
+                    <thead>
+                        <tr>
+                            <td colspan="4">
+                                <select>
+                                    <option value="0">Січень</option>
+                                    <option value="1">Лютий</option>
+                                    <option value="2">Березень</option>
+                                    <option value="3">Квітень</option>
+                                    <option value="4">Травень</option>
+                                    <option value="5">Червень</option>
+                                    <option value="6">Липень</option>
+                                    <option value="7">Серпень</option>
+                                    <option value="8">Вересень</option>
+                                    <option value="9">Жовтень</option>
+                                    <option value="10">Листопад</option>
+                                    <option value="11">Грудень</option>
+                                </select>
+                            <td colspan="3"><input type="number" value="" min="0" max="9999" size="4">
+                        <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+                    <tbody>
+                </table>
+            </div>
+            <div class="col-md-12">
+                <a class="time-table" href="javascript:">
+                    <div class="img"><img src="../images/time/time-gum.jpg" alt="" title="" /></div>
+                </a>
+            </div>
+                    </div>
+    </div>
+
+
+    <div id="sportGym" class="link" style="display:none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 middle">
+                    <ul class="breadcrumb middle-inside">
+                        <li class="menu-main-page"><a href="#mainPage">Головна</a></li>
+                        <li class="menu-service"><a href="#service">Послуги</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12 page-title">
+                <p><ht>тренажерна зала</ht></p>
+            </div>
+            <div class="col-md-6 contacts-fhoto pointer">
+                <img src="../images/service/gym.jpg" />
+            </div>
+            <div class="col-md-6">
+                <p>
+                    <h4>
+                        м. Київ, вул. Міста Шалетт, 6
+                    </h4>
+                </p>
+                <p>
+                    <img src="../images/m1.png"><a href="#map4"><hm>Показати на карті</hm></a>
+                </p>
+                <p>
+                    <a href="#scheduleSGym" class="btn btn-primary-schedule active" role="button">Розклад занять на катку</a>
+                </p>
+                <p class="txt-service">
+                    <b>Режим роботи:</b><br />Понеділок-п'ятниця з 7:00 до 23:00<br />Субота-неділя з 9:00 до 22:00<br /><b>Телефон:</b> (044) 5931515
+                    Технічна характеристика З якого року працює Работает с 2014 года. В данном зале проводятся тренировки по акробатике, паркуру и спортивной гимнастике для всех возрастов. Оборудование: гимнастический (пружинящий) ковер, много матов и кубов, детские модули, женские и мужские брусья, кольца, язык, конь, перекладина, бревна.
+                </p>
+            </div>
+        </div>
+        <div id="map4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10159.047175790458!2d30.60968532818134!3d50.46416030576719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d01ca8f77f83%3A0x6c849ea6c32a6a4!2z0LLRg9C70LjRhtGPINCc0ZbRgdGC0LAg0KjQsNC70LXRgtGCLCDQmtC40ZfQsg!5e0!3m2!1suk!2sua!4v1489599930436" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="scheduleSGym" class="link" style="display:none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 middle">
+                    <ul class="breadcrumb middle-inside">
+                        <li class="menu-main-page"><a href="#mainPage">Головна</a></li>
+                        <li class="menu-service"><a href="#service">Послуги</a></li>
+                        <li>Розклад</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <a href="../images/time/pdf/timesportGym.pdf" class="time-download" download>Завантажити розклад</a>
+                <table id="calendar6">
+                    <thead>
+                        <tr>
+                            <td colspan="4">
+                                <select>
+                                    <option value="0">Січень</option>
+                                    <option value="1">Лютий</option>
+                                    <option value="2">Березень</option>
+                                    <option value="3">Квітень</option>
+                                    <option value="4">Травень</option>
+                                    <option value="5">Червень</option>
+                                    <option value="6">Липень</option>
+                                    <option value="7">Серпень</option>
+                                    <option value="8">Вересень</option>
+                                    <option value="9">Жовтень</option>
+                                    <option value="10">Листопад</option>
+                                    <option value="11">Грудень</option>
+                                </select>
+                            <td colspan="3"><input type="number" value="" min="0" max="9999" size="4">
+                        <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+                    <tbody>
+                </table>
+            </div>
+            <div class="col-md-12">
+                <a class="time-table" href="javascript:">                                       
+                                <div class="img"><img src="../images/time/time-sportgum.jpg" alt="" title="" /></div>
+                            </a>
+                        </div>
+                        
+            </div>
+        </div>
+
+    <div id="cycleTrack" class="link" style="display:none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 middle">
+                    <ul class="breadcrumb middle-inside">
+                        <li class="menu-main-page"><a href="#mainPage">Головна</a></li>
+                        <li class="menu-service"><a href="#service">Послуги</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12 page-title">
+                <p><ht>велотрек</ht></p>
+            </div>
+            <div class="col-md-6 contacts-fhoto pointer">
+                <img src="../images/service/cycletrack.jpg" />
+            </div>
+            <div class="col-md-6">
+                <p>
+                    <h4>
+                        м. Київ, вул. Міста Шалетт, 6
+                    </h4>
+                </p>
+                <p>
+                    <img src="../images/m1.png"><a href="#map5"><hm>Показати на карті</hm></a>
+                </p>
+                <p>
+                    <a href="#scheduleTrack" class="btn btn-primary-schedule active" role="button">Розклад занять на катку</a>
+                </p>
+                <p class="txt-service">
+                    <b>Режим роботи:</b><br />Понеділок-п'ятниця з 7:00 до 23:00<br />Субота-неділя з 9:00 до 22:00<br /><b>Телефон:</b> (044) 5931515
+                    Технічна характеристика З якого року працює Работает с 2014 года. В данном зале проводятся тренировки по акробатике, паркуру и спортивной гимнастике для всех возрастов. Оборудование: гимнастический (пружинящий) ковер, много матов и кубов, детские модули, женские и мужские брусья, кольца, язык, конь, перекладина, бревна.
+                </p>
+            </div>
+        </div>
+        <div id="map5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10159.047175790458!2d30.60968532818134!3d50.46416030576719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d01ca8f77f83%3A0x6c849ea6c32a6a4!2z0LLRg9C70LjRhtGPINCc0ZbRgdGC0LAg0KjQsNC70LXRgtGCLCDQmtC40ZfQsg!5e0!3m2!1suk!2sua!4v1489599930436" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="scheduleTrack" class="link" style="display:none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 middle">
+                    <ul class="breadcrumb middle-inside">
+                        <li class="menu-main-page"><a href="#mainPage">Головна</a></li>
+                        <li class="menu-service"><a href="#service">Послуги</a></li>
+                        <li>Розклад</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <a href="../images/time/pdf/timecycletrack.pdf" class="time-download" download>Завантажити розклад</a>
+                                <table id="calendar7">
+                    <thead>
+                        <tr>
+                            <td colspan="4">
+                                <select>
+                                    <option value="0">Січень</option>
+                                    <option value="1">Лютий</option>
+                                    <option value="2">Березень</option>
+                                    <option value="3">Квітень</option>
+                                    <option value="4">Травень</option>
+                                    <option value="5">Червень</option>
+                                    <option value="6">Липень</option>
+                                    <option value="7">Серпень</option>
+                                    <option value="8">Вересень</option>
+                                    <option value="9">Жовтень</option>
+                                    <option value="10">Листопад</option>
+                                    <option value="11">Грудень</option>
+                                </select>
+                            <td colspan="3"><input type="number" value="" min="0" max="9999" size="4">
+                        <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+                    <tbody>
+                </table>
+            </div>
+            <div class="col-md-12">
+                                        <a class="time-table" href="javascript:">
+                            <div class="img"><img src="../images/time/time-cycletrack.jpg" alt="" title="" /></div>
+                        </a>
+                    </div>
+                                   </div>
+            </div>
+  
+
+    <div id="hall" class="link" style="display:none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 middle">
+                    <ul class="breadcrumb middle-inside">
+                        <li class="menu-main-page"><a href="#mainPage">Головна</a></li>
+                        <li class="menu-service"><a href="#service">Послуги</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12 page-title">
+                <p><ht>конференц-зала</ht></p>
+            </div>
+            <div class="col-md-6 contacts-fhoto pointer">
+                <img src="../images/service/hall.jpg" />
+            </div>
+            <div class="col-md-6">
+                <p>
+                    <h4>
+                        м. Київ, вул. Міста Шалетт, 6
+                    </h4>
+                </p>
+                <p>
+                    <img src="../images/m1.png"><a href="#map6"><hm>Показати на карті</hm></a>
+                </p>
+                <p>
+                    <a href="#schedulehall" class="btn btn-primary-schedule active" role="button">Вартість аренди</a>
+                </p>
+                <p class="txt-service">
+                    <b>Режим роботи:</b><br />Понеділок-п'ятниця з 7:00 до 23:00<br />Субота-неділя з 9:00 до 22:00<br /><b>Телефон:</b> (044) 5931515
+                    Технічна характеристика З якого року працює Работает с 2014 года. В данном зале проводятся тренировки по акробатике, паркуру и спортивной гимнастике для всех возрастов. Оборудование: гимнастический (пружинящий) ковер, много матов и кубов, детские модули, женские и мужские брусья, кольца, язык, конь, перекладина, бревна.
+                </p>
+            </div>
+        </div>
+        <div id="map6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10159.047175790458!2d30.60968532818134!3d50.46416030576719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d01ca8f77f83%3A0x6c849ea6c32a6a4!2z0LLRg9C70LjRhtGPINCc0ZbRgdGC0LAg0KjQsNC70LXRgtGCLCDQmtC40ZfQsg!5e0!3m2!1suk!2sua!4v1489599930436" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="schedulehall" class="link" style="display:none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 middle">
+                    <ul class="breadcrumb middle-inside">
+                        <li class="menu-main-page"><a href="#mainPage">Головна</a></li>
+                        <li class="menu-service"><a href="#service">Послуги</a></li>
+                        <li>Розклад</li>
+                    </ul>
+                </div>
+            </div>
+                        <div class="col-md-12">
+                <a href="../images/time/pdf/timehall.pdf" class="time-download" download>Завантажити розклад</a>
+                <table id="calendar8">
+                    <thead>
+                        <tr>
+                            <td colspan="4">
+                                <select>
+                                    <option value="0">Січень</option>
+                                    <option value="1">Лютий</option>
+                                    <option value="2">Березень</option>
+                                    <option value="3">Квітень</option>
+                                    <option value="4">Травень</option>
+                                    <option value="5">Червень</option>
+                                    <option value="6">Липень</option>
+                                    <option value="7">Серпень</option>
+                                    <option value="8">Вересень</option>
+                                    <option value="9">Жовтень</option>
+                                    <option value="10">Листопад</option>
+                                    <option value="11">Грудень</option>
+                                </select>
+                            <td colspan="3"><input type="number" value="" min="0" max="9999" size="4">
+                        <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+                    <tbody>
+                </table>
+                </div>
+                          
+             <div class="col-md-12">
+                    <a class="time-table" href="javascript:">
+                        <div class="img"><img src="../images/time/time-hall.jpg" alt="" title="" /></div>
+                    </a>
+                </div>
+                                    
+                    
+                </div>
+            </div>
+       
+
+
+
+
+    <div id="contacts" class="link" style="display:none;">
+        <div class="container">
+            <div class="row" style="margin:160px 0 50px 0;">
+                <div class="col-md-12 text">
+                    <p><h3 style="text-align:center">КОНТАКТИ</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9 contacts-map contacts-rink ">
+                    <div id="mapRink">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10159.047175790458!2d30.60968532818134!3d50.46416030576719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d01ca8f77f83%3A0x6c849ea6c32a6a4!2z0LLRg9C70LjRhtGPINCc0ZbRgdGC0LAg0KjQsNC70LXRgtGCLCDQmtC40ZfQsg!5e0!3m2!1suk!2sua!4v1489599930436" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <div class="contacts-map-inf">
+                        <button class="contacts-close">&times;</button>
+                        <p><b>КАТОК</b></p>
+                        <p><b>Адреса: м. Київ, вул. Міста Шалетт, 6</b></p>
+                        <p><b>Режим роботи:</b><br />Понеділок-п'ятниця з 7:00 до 23:00<br />Субота-неділя з 9:00 до 22:00<br /></p>
+                        <p>
+                            <b>
+                                Телефон:
+                            </b> (044) 5931515
+                        </p>
+                        <p>Email: </p><br />
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <ul class="contacts-list">
+                        <li class="contacts-rink"><a href="#mapRink">КАТОК</a></li>
+                        <li class="contacts-sbase"><a href="#mapSbase">СПОРТИВНА БАЗА</a></li>
+                        <li class="contacts-gum"><a href="#mapGum">ГІМНАСТИЧНА ЗАЛА</a></li>
+                        <li class="contacts-sgum"><a href="#mapSGym">ТРЕНАЖЕРНА ЗАЛА</a></li>
+                        <li class="contacts-track"><a href="#mapTrack">ВЕЛОТРЕК</a></li>
+                        <li class="contacts-hall"><a href="#mapHall">КОНФЕРЕНЦ-ЗАЛА</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9 contacts-map contacts-sbase">
+                    <div id="mapSbase">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.806225010033!2d30.542811315440115!3d50.463332979477144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce341bbda1f3%3A0x317b5de176db8574!2z0KLRgNGD0YXQsNC90ZbQsiDQvtGB0YLRgNGW0LI!5e0!3m2!1suk!2sua!4v1492079545888" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <div class="contacts-map-inf">
+                            <button class="contacts-close">&times;</button>
+                            <p><b>СПОРТИВНА БАЗА</b></p>
+                            <p><b>Адреса: м. Київ, Труханів острів</b></p>
+                            <p><b>Режим роботи:</b><br />Понеділок-п'ятниця з 7:00 до 23:00<br />Субота-неділя з 9:00 до 22:00<br /></p>
+                            <p>
+                                <b>
+                                    Телефон:
+                                </b> (044) 5931515
+                            </p>
+                            <p>Email: </p><br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9 contacts-map contacts-gum">
+                    <div id="mapGum">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10159.047175790458!2d30.60968532818134!3d50.46416030576719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d01ca8f77f83%3A0x6c849ea6c32a6a4!2z0LLRg9C70LjRhtGPINCc0ZbRgdGC0LAg0KjQsNC70LXRgtGCLCDQmtC40ZfQsg!5e0!3m2!1suk!2sua!4v1489599930436" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <div class="contacts-map-inf">
+                            <button class="contacts-close">&times;</button>
+                            <p><b>ГІМНАСТИЧНА ЗАЛА</b></p>
+                            <p><b>Адреса:  м. Київ, Труханів острів</b></p>
+                            <p><b>Режим роботи:</b><br />Понеділок-п'ятниця з 7:00 до 23:00<br />Субота-неділя з 9:00 до 22:00<br /></p>
+                            <p>
+                                <b>
+                                    Телефон:
+                                </b> (044) 5931515
+                            </p>
+                            <p>Email: </p><br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9 contacts-map contacts-sgum">
+                    <div id="mapSGym">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10159.047175790458!2d30.60968532818134!3d50.46416030576719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d01ca8f77f83%3A0x6c849ea6c32a6a4!2z0LLRg9C70LjRhtGPINCc0ZbRgdGC0LAg0KjQsNC70LXRgtGCLCDQmtC40ZfQsg!5e0!3m2!1suk!2sua!4v1489599930436" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <div class="contacts-map-inf">
+                            <button class="contacts-close">&times;</button>
+                            <p><b>ТРЕНАЖЕРНА ЗАЛА</b></p>
+                            <p><b>Адреса:  м. Київ, Труханів острів</b></p>
+                            <p><b>Режим роботи:</b><br />Понеділок-п'ятниця з 7:00 до 23:00<br />Субота-неділя з 9:00 до 22:00<br /></p>
+                            <p>
+                                <b>
+                                    Телефон:
+                                </b> (044) 5931515
+                            </p>
+                            <p>Email: </p><br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-9 contacts-map contacts-track">
+                    <div id="mapTrack">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10159.047175790458!2d30.60968532818134!3d50.46416030576719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d01ca8f77f83%3A0x6c849ea6c32a6a4!2z0LLRg9C70LjRhtGPINCc0ZbRgdGC0LAg0KjQsNC70LXRgtGCLCDQmtC40ZfQsg!5e0!3m2!1suk!2sua!4v1489599930436" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <div class="contacts-map-inf">
+                            <button class="contacts-close">&times;</button>
+                            <p><b>ВЕЛОТРЕК</b></p>
+                            <p><b>Адреса:  м. Київ, Труханів острів</b></p>
+                            <p><b>Режим роботи:</b><br />Понеділок-п'ятниця з 7:00 до 23:00<br />Субота-неділя з 9:00 до 22:00<br /></p>
+                            <p>
+                                <b>
+                                    Телефон:
+                                </b> (044) 5931515
+                            </p>
+                            <p>Email: </p><br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9 contacts-map contacts-hall">
+                    <div id="mapHall">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10159.047175790458!2d30.60968532818134!3d50.46416030576719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d01ca8f77f83%3A0x6c849ea6c32a6a4!2z0LLRg9C70LjRhtGPINCc0ZbRgdGC0LAg0KjQsNC70LXRgtGCLCDQmtC40ZfQsg!5e0!3m2!1suk!2sua!4v1489599930436" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <div class="contacts-map-inf">
+                            <button class="contacts-close">&times;</button>
+                            <p><b>КОНФЕРЕНЦ-ЗАЛА</b></p>
+                            <p><b>Адреса:  м. Київ, Труханів острів</b></p>
+                            <p><b>Режим роботи:</b><br />Понеділок-п'ятниця з 7:00 до 23:00<br />Субота-неділя з 9:00 до 22:00<br /></p>
+                            <p>
+                                <b>
+                                    Телефон:
+                                </b> (044) 5931515
+                            </p>
+                            <p>Email: </p><br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-rink">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 gallery">
+                    <h1>Галерея</h1>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="#photoGallery"><img class="gallery-foto-mini" src="../images/footer/mini-gall1.jpg" alt=""></a>
+                            <a href="#photoGallery"><img class="gallery-foto-mini" src="../images/footer/mini-gall11.jpg" alt=""></a>
+                        </div>
+                        <div class="col-md-12">
+                            <a href="#photoGallery"><img class="gallery-foto-mini" src="../images/footer/mini-gall12.jpg" alt=""></a>
+                            <a href="#photoGallery"><img class="gallery-foto-mini" src="../images/footer/mini-gall13.jpg" alt=""></a>
+                        </div>
+                        <div class="col-md-12">
+                            <a href="#photoGallery"><img class="gallery-foto-mini" src="../images/footer/mini-gall3.jpg" alt=""></a>
+                            <a href="#photoGallery"><img class="gallery-foto-mini" src="../images/footer/mini-gall6.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 menu-bottom">
+                    <h1>про нас</h1>
+                    <ul>
+                        <li class="menu-about-us"><a href="#aboutUs">історія</a></li>
+                        <li class="menu-our-team"><a href="#ourTeam">керівництво</a></li>
+                        <li class="menu-photo-gallery"><a href="#photoGallery">фотогалерея</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 menu-bottom">
+                    <h1>послуги</h1>
+                    <ul class="list" id="serviceList">
+                        <li class="rink-service"><a href="#iceRink">Каток</a></li>
+                        <li class="sports-base-service"><a href="#sportsBase">Спортивна база</a></li>
+                        <li class="gym-service"><a href="#gym">Гімнастична зала</a></li>
+                        <li class="sport-gym-service"><a href="#sportGym">Тренажерна зала</a></li>
+                        <li class="cycletrack-service"><a href="#cycleTrack">Велотрек</a></li>
+                        <li class="hall-service"><a href="#hall">Конференц-зала</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h1>Контакти</h1>
+                    <a href="#contacts">
+                        <img class="map-min" src="../images/footer/mini-map.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/slick.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/jquery.fancybox.js" type="text/javascript"></script>
+
+
+
+    <script src="../js/JavaScriptRink.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
